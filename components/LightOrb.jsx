@@ -13,7 +13,7 @@ const LightOrb = ({ x_init, position }) => {
       setInnerHeight(window.innerHeight || 0);
     };
 
-    handleResize(); 
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -42,8 +42,8 @@ const LightOrb = ({ x_init, position }) => {
         repeat: Infinity,
         repeatType: "reverse",
         duration: Math.random() * (10 - 5) + 5,
-        restDelta: 0.2,
-        velocity: 60,
+        restDelta: 1,
+        velocity: 100,
       }}
       className="border border-red-400 h-fit absolute z-10"
     >

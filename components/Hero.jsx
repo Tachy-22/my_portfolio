@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className={` w-full h-[90vh] bg-cover overflow-hidden relative `}>
       {/* <LightOrbs position="top" /> */}
-      <div className=" md:p-[2rem] sm:p-[1rem] p-4  h-full uppercase w-full flex flex-col justify-end xl:items-center">
+      <div className=" md:p-[2rem] sm:p-[1rem] p-4  h-full uppercase w-full flex flex-col justify-center xl:items-center">
         <h1 className="  font-extrabold xl:text-9xl sm:text-7xl text-3xl tracking-wide monoton lg:text-center text-start">
           Jeffery Entekume
         </h1>
@@ -17,7 +17,7 @@ const Hero = () => {
           {" "}
           front end developer & AI Enthusiast
         </p>
-        {/* <LightOrbs position="top" /> */}
+        <LightOrbs position="top" />
         <div className=" w-[2rem] h-[5em] mx-auto border-2 border-zinc-200 rounded-full flex justify-center items-start py-2 ">
           <motion.div
             initial={{ y: 0 }} // Initial scale and y position
@@ -33,7 +33,7 @@ const Hero = () => {
             font-extrabold transition-all duration-1000"
             />
           </motion.div>
-          {/* <LightOrbs position="bottom" /> */}
+          <LightOrbs position="bottom" />
         </div>
       </div>
     </section>

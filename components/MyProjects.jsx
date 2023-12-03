@@ -99,7 +99,7 @@ const MyProjects = () => {
           <div className="flex h-full">
             {" "}
             <Image
-              src={`/assets/images/repo.jpg`}
+              src={`/assets/images/repo.png`}
               alt={`repo`}
               className="w-full h-fit    xl:hover:scale-[1.5]  lg:hover:scale-110 xl:hover:-translate-y-[6rem] xl:hover:-translate-x-[3.5rem] transition-all duration-1000  "
               width={1890}
