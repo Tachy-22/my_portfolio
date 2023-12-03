@@ -18,7 +18,7 @@ const Hero = () => {
           front end developer & AI Enthusiast
         </p>
         {/* <LightOrbs position="top" /> */}
-        <div className=" w-[2rem] lg:h-[5em] h-[4rem] mx-auto border-2 border-zinc-200 rounded-full flex justify-center items-start py-2 ">
+        <div className=" w-[2rem] sm:h-[5em] h-[4rem] mx-auto border-2 border-zinc-200 rounded-full flex justify-center items-start py-2 ">
           <motion.div
             initial={{ y: 0 }} // Initial scale and y position
             animate={{
@@ -29,7 +29,7 @@ const Hero = () => {
             transition={{ repeat: Infinity, duration: 1 }}
           >
             <FaArrowDownLong
-              className="lg:text-4xl text-xl text-purple-400 
+              className="sm:text-4xl text-xl text-purple-400 
             font-extrabold transition-all duration-1000"
             />
           </motion.div>
