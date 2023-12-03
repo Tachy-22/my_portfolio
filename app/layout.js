@@ -13,8 +13,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        style={{ backgroundImage: "url(assets/images/bgImg.png)" }}
-        className={`w-full  bg-contain  `}
+        style={{ backgroundImage: "url(assets/images/bgImg.webp)" }}
+        className={`w-full  bg-contain   `}
       >
         <Nav />
         <main className="flex min-h-screen flex-col items-center justify-between w-full   backdrop-brightness-[30%]">

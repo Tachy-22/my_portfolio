@@ -26,7 +26,7 @@ const Nav = () => {
   };
 
   return (
-    <section className="w-full z-10 sticky top-0 lg:px-4 backdrop-blur-xl">
+    <section className="w-full z-10 sticky top-0 lg:px-4 backdrop-blur-3xl">
       <div className="border-b flex py-4 px-4 xl:px-0 justify-between">
         <p className="uppercase font-bold text-xl text-blue-300">
           Jeffery E <span className="text-white">.</span>{" "}

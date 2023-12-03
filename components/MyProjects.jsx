@@ -99,7 +99,7 @@ const MyProjects = () => {
           <div className="flex h-full">
             {" "}
             <Image
-              src={`/assets/images/repo.png`}
+              src={`/assets/images/repo.webp`}
               alt={`repo`}
               className="w-full h-fit    xl:hover:scale-[1.5]  lg:hover:scale-110 xl:hover:-translate-y-[6rem] xl:hover:-translate-x-[3.5rem] transition-all duration-1000  "
               width={1890}
@@ -171,7 +171,7 @@ const MyProjects = () => {
               className="bg- xxl:w-[30rem] xl:w-[25rem]  max-w-full  overflow-hidden  "
             >
               <div
-                style={{ backgroundImage: "url(assets/images/bgImg.png)" }}
+                style={{ backgroundImage: "url(assets/images/bgImg.webp)" }}
                 className="w-full xxl:h-[20rem]  h-[15rem] bg-cover hover:scale-105 transition-all duration-700 "
               ></div>
               <div className="p-4 gap-4 bg-gray-900/20 w-full flex flex-col ">
@@ -183,6 +183,7 @@ const MyProjects = () => {
                   <div className="w-full bg-yellow-400/40 h-[0.1rem]"></div>
                   <div className="flex">
                     <a
+                      aria-label="Github link"
                       href={project.githubLink}
                       className="mr-2 text-gray-500 hover:scale-105"
                       target="_blank"
@@ -191,6 +192,7 @@ const MyProjects = () => {
                       <FaGithub className="md:text-2xl" />
                     </a>
                     <a
+                      aria-label="Live-site link"
                       href={project.liveSiteLink}
                       className="text-gray-500 hover:scale-105"
                       target="_blank"

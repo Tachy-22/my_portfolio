@@ -92,7 +92,7 @@ const MyStack = () => {
               ></span>
             </h2>
             <p className="mb-4">{stackItem.description}</p>
-            <div className="grid xl:grid-cols-2 md:grid:cols-2 grid-cols-4 md:gap-4">
+            <div className="grid xl:grid-cols-4 md:grid:cols-2 grid-cols-4 md:gap-2">
               {stackItem.technologies.map((tech, techIndex) => (
                 <div
                   key={techIndex}
