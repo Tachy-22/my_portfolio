@@ -60,7 +60,7 @@ const workExperience = [
 ];
 
 const Accordion = () => {
-  const [activeItem, setActiveItem] = useState(0);
+  const [activeItem, setActiveItem] = useState(null);
   const [itemHeights, setItemHeights] = useState({});
   const contentRefs = useRef([]);
 

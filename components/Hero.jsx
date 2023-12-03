@@ -17,7 +17,7 @@ const Hero = () => {
           {" "}
           front end developer & AI Enthusiast
         </p>
-        <LightOrbs position="top" />
+        {/* <LightOrbs position="top" /> */}
         <div className=" w-[2rem] h-[5em] mx-auto border-2 border-zinc-200 rounded-full flex justify-center items-start py-2 ">
           <motion.div
             initial={{ y: 0 }} // Initial scale and y position
@@ -33,7 +33,7 @@ const Hero = () => {
             font-extrabold transition-all duration-1000"
             />
           </motion.div>
-          <LightOrbs position="bottom" />
+          {/* <LightOrbs position="bottom" /> */}
         </div>
       </div>
     </section>
