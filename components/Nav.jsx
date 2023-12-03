@@ -52,6 +52,8 @@ const Nav = () => {
           {/* Mobile Nav */}
           <div className="xl:hidden">
             <button
+              name={`toggle-button`}
+              aria-label="toggle-button"
               onClick={toggleMobileMenu}
               className="block text-white hover:text-gray-300 focus:outline-none"
             >

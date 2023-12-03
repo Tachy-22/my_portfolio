@@ -32,6 +32,7 @@ const ContactMe = () => {
       <div className="flex gap-3">
         {Object.entries(links).map(([text, url]) => (
           <a
+            aria-label={`Go to ${text}`}
             key={text}
             href={url}
             target="_blank" // Opens the link in a new tab/window
