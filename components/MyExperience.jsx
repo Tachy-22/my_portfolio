@@ -4,7 +4,10 @@ import { IoLocationSharp } from "react-icons/io5";
 
 const MyExperience = () => {
   return (
-    <div className="bg-black flex flex-col gap-6 pb-[3rem] sm:px-6 px-2">
+    <div
+      id="my-experience"
+      className="bg-black flex flex-col gap-6 py-[3rem] sm:px-6 px-2"
+    >
       {" "}
       <h2 className="xl:text-4xl text-3xl font-extrabold text-center flex flex-col gap-3 capitalise pb-[0.5rem] monoton">
         <p className="">Professional</p>
@@ -26,11 +29,11 @@ const workExperience = [
     companyName: "Prodigal AI",
     descriptionOfWorkDone:
       "Managed frontend development and collaborated on various projects.",
-    companyLogo: "/assets/images/prodigal_ai_logo.jpeg",
+    companyLogo: "/assets/images/prodigal_ai_logo.webp",
     position: "Frontend Developer intern",
     techStackUsed: ["React", "JavaScript", "HTML", "CSS", "Bootstrap"],
     companySite: "http://prodigalai.com.au",
-    location: "Sydney, AU",
+    location: " Sydney, AU",
     remote: true,
   },
   {
@@ -38,11 +41,11 @@ const workExperience = [
     companyName: "N3Clouds ",
     descriptionOfWorkDone:
       "Worked as an intern in the development of several custom components using typescript.",
-    companyLogo: "/assets/images/N3clouds.jpeg",
+    companyLogo: "/assets/images/N3clouds.webp",
     position: "Frontend Developer intern",
     techStackUsed: ["React", "Typescript", "HTML", "CSS"],
     companySite: "https://www.n3clouds.com/",
-    location: "Kolkata, IN",
+    location: " Kolkata, IN",
     remote: true,
   },
   {
@@ -50,7 +53,7 @@ const workExperience = [
     companyName: "Headway Vision",
     descriptionOfWorkDone:
       "Managed frontend development and collaborated on two projects.",
-    companyLogo: "/assets/images/Headway.jpeg",
+    companyLogo: "/assets/images/Headway.webp",
     position: "Frontend Web Developer",
     techStackUsed: ["CSS", "HTML5", "Recat js", "Google sheets"],
     companySite: "https://www.Headwayvision.com",
@@ -86,8 +89,8 @@ const Accordion = () => {
   useEffect(() => {
     if (activeItem !== null) {
       const timeout = setTimeout(() => {
-        const yOffset = 5120 + activeItem * 75;
-        window.scrollTo({ top: yOffset, behavior: "smooth" });
+        const yOffset = 100;
+        window.scrollBy({ top: yOffset, behavior: "smooth" });
       }, 1500);
 
       return () => clearTimeout(timeout);
@@ -144,18 +147,18 @@ const Accordion = () => {
             className=" bg-purple-500/25 my-3 rounded-lg lg:text-md text-sm"
             id="body"
           >
-            <div className="lg:px-[2rem]   px-3 pb-3 lg:flex-row flex-col flex justify-between w-full  items-center ">
+            <div className="lg:px-[2rem]   px-3 pb-3 lg:flex-row flex-col flex justify-between w-full  lg:items-center ">
               <div className="w-full pt-4 lg:hidden flex">
                 {" "}
                 <Image
                   src={experience.companyLogo}
                   alt={experience.companyName}
-                  className="w-12 h-12 object-contain   "
-                  width={24}
-                  height={24}
+                  className="w-12 h-12 object-contain rounded-full   "
+                  width={200}
+                  height={200}
                 />
               </div>
-              <div key={index} className="my-4 cursor-pointer flex flex-col">
+              <div key={index} className="my-4 cursor-pointer flex flex-col ">
                 <div className="md:flex-row flex flex-col gap-3 py-1 space-mono font-thin ">
                   <p className=" flex items-center gap-2">
                     <IoLocationSharp className="text-lg text-purple-500" />(
@@ -187,9 +190,9 @@ const Accordion = () => {
               <Image
                 src={experience.companyLogo}
                 alt={experience.companyName}
-                className="w-12 h-12 object-contain mr-4 lg:flex hidden "
-                width={24}
-                height={24}
+                className="w-20 rounded-full h-20  object-contain mr-4 lg:flex hidden "
+                width={200}
+                height={200}
               />
             </div>
           </div>

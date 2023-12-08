@@ -8,7 +8,7 @@ const projects = [
   {
     name: "Hexashop",
     category: "E-commerce",
-    image: "/assets/images/Hexashop.png",
+    image: "/assets/images/Hexashop.webp",
     githubLink: "https://github.com/Tachy-22/Hexashop",
     liveSiteLink: "https://hexashop-nine.vercel.app/",
     description:
@@ -17,7 +17,7 @@ const projects = [
   {
     name: "Vibeverse",
     category: "Web Application",
-    image: "/assets/images/vibeverse.png",
+    image: "/assets/images/vibeverse.webp",
     githubLink: "https://github.com/Tachy-22/vibeverse",
     liveSiteLink: "https://vibeverse-eosin.vercel.app/",
     description:
@@ -26,7 +26,7 @@ const projects = [
   {
     name: "Chat_GPT_CLONE",
     category: "Web Application",
-    image: "/assets/images/chatgpt.png",
+    image: "/assets/images/chatgpt.webp",
     githubLink: "https://github.com/Tachy-22/ChatGpt_Clone",
     liveSiteLink: "https://chat-gpt-clone-tachy-22.vercel.app/",
     description:
@@ -44,7 +44,7 @@ const projects = [
   {
     name: "Buildz",
     category: "Landing Page",
-    image: "/assets/images/Buildz.png",
+    image: "/assets/images/Buildz.webp",
     githubLink: "https://github.com/Tachy-22/Bulidz_landingpage",
     liveSiteLink: "https://bulidz-landingpage.vercel.app/",
     description:
@@ -53,7 +53,7 @@ const projects = [
   {
     name: "The_Dictionary",
     category: "Web Application",
-    image: "/assets/images/dictionary.png",
+    image: "/assets/images/dictionary.webp",
     githubLink: "https://github.com/Tachy-22/_Dictionary_app",
     liveSiteLink: "https://dictionary-app-tachy-22.vercel.app/",
     description: "A simple dictionary web appliction.",
@@ -61,7 +61,7 @@ const projects = [
   {
     name: "Manage",
     category: "Landing Page",
-    image: "/assets/images/manage.png",
+    image: "/assets/images/manage.webp",
     githubLink: "https://github.com/Tachy-22/quiz_grad_app",
     liveSiteLink:
       "https://639a08fc9e0b6c2c77a82c8b--calm-monstera-2b3097.netlify.app/",
@@ -71,7 +71,7 @@ const projects = [
   {
     name: "QuizGrad",
     category: "Web application",
-    image: "/assets/images/QuizGrad.png",
+    image: "/assets/images/QuizGrad.webp",
     githubLink: "https://github.com/Tachy-22/quiz_grad_app",
     liveSiteLink: "https://bulidz-landingpage.vercel.app/",
     description:
@@ -80,7 +80,7 @@ const projects = [
   {
     name: "Crowdfund",
     category: "Landing Page",
-    image: "/assets/images/crowdfund.png",
+    image: "/assets/images/crowdfund.webp",
     githubLink: "https://github.com/Tachy-22/Crowd_funding",
     liveSiteLink: "https://tachy-22.github.io/Crowd_funding/",
     description: "A crowdfunding landing page.",
@@ -108,7 +108,10 @@ const MyProjects = () => {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <section className="bg-black h-full w-full flex flex-col justify-center items-center pt-[10rem]  sm:pt-[13rem] md:pt-[10rem] lg:pt-[18rem] xl:pt-[20rem] py-[4rem] relative">
+    <section
+      id="my-projects"
+      className="bg-black h-full w-full flex flex-col justify-center items-center pt-[10rem]  sm:pt-[13rem] md:pt-[10rem] lg:pt-[18rem] xl:pt-[20rem] py-[4rem] relative"
+    >
       <div className="w-full  flex justify-center items-center  absolute lg:-top-[5rem] md:-top-[0rem] -top-10  brightness-[30%]  bg- ">
         <Image
           src={`/assets/images/htmlMockup.webp`}
@@ -119,7 +122,7 @@ const MyProjects = () => {
         />
       </div>{" "}
       <div className="flex lg:flex-row flex-col w-[90%] z-10 lg:gap-[2rem]  md:w-[w-90%] xl:w-[90%] xxl:w-[70%] justify-between ">
-        <div className="  text-start w-full lg:w-[45%]   ">
+        <div className="  text-start w-full lg:w-[45%]  flex flex-col justify-end  ">
           <h2 className="xl:text-7xl p-2 lg:text-5xl text-4xl font-extrabold text-start flex flex-col gap-3 uppercase monoton">
             <p className="">My</p>
             <p className="">Projects</p>
@@ -132,10 +135,10 @@ const MyProjects = () => {
             Machine Learning and AI technologies.
           </p>
         </div>
-        <aside className=" lg:w-[55%] xl:w-[60%]   lg:flex-row flex flex-col-reverse gap-4  justify-between items-end p-2 ">
+        <aside className=" lg:w-[55%] xl:w-[60%]   flex flex-col-reverse gap-4  justify-between  p-2 ">
           <div className="flex flex-col gap-4 space-mono text-xl  w-fit ">
             <Image
-              src={`/assets/images/arrow.png`}
+              src={`/assets/images/arrow.webp`}
               alt={`arrow`}
               className="w-[10rem] h-full  z-20 lg:block hidden "
               width={150}
@@ -157,14 +160,14 @@ const MyProjects = () => {
               </a>
             </button>
           </div>
-          <div className="flex h-full w-full ">
+          <div className="flex h-full w-full  ">
             {" "}
             <a href="https://github.com/Tachy-22" target="_blank" className="">
               {" "}
               <Image
                 src={`/assets/images/repo.webp`}
                 alt={`repo`}
-                className="w-full h-fit    xl:hover:scale-[1.4  ]  lg:hover:scale-110 xl:hover:-translate-y-[6rem] xl:hover:-translate-x-[3.5rem] transition-all duration-1000  "
+                className="w-full h-fit  lg:translate-y-[5rem]   xl:hover:-translate-x-[3.5rem] transition-all duration-1000  "
                 width={1890}
                 height={955}
               />
@@ -207,7 +210,7 @@ const MyProjects = () => {
               </button>
               {isMobileDropdown && (
                 <div
-                  className={`absolute w-[10rem] top-full left-0 right-0 bg-black/70 border border-gray-800 rounded-md z-20 mt-1`}
+                  className={`absolute w-[10rem] top-full left-0 right-0 bg-black/90 border border-gray-800 rounded-md z-20 mt-1`}
                 >
                   {categories.map((category) => (
                     <button
@@ -232,11 +235,11 @@ const MyProjects = () => {
           {filteredProjects.map((project, index) => (
             <div
               key={index}
-              className="bg- xxl:w-[30rem] xl:w-[25rem]  max-w-full min-h-max  overflow-hidden flex flex-col "
+              className="bg-  xl:w-[20rem]  max-w-full   overflow-hidden flex flex-col h-[25rem] "
             >
               <Image
                 src={project.image}
-                className="w-full xxl:h-[25rem] bg-center  h-[12rem] bg-cover hover:scale-105 transition-all duration-700 "
+                className="w-full  bg-center  h-[18rem] bg-cover hover:scale-105 transition-all duration-700 "
                 width={1920}
                 height={997}
               />

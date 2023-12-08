@@ -9,7 +9,7 @@ const links = {
 
 const ContactMe = () => {
   return (
-    <section className="  to-gray-900 bg-gradient-to-b from-black py-[2rem] px-4 flex justify-center items-center flex-col ">
+    <section id="contact" className="  to-gray-900 bg-gradient-to-b from-black py-[2rem] px-4 flex justify-center items-center flex-col ">
       <h2 className="xl:text-2xl text-xl font-extrabold text-center flex flex-col gap-3 capitalise pb-4 monoton">
         <p className="">What's_Next ?</p>
       </h2>

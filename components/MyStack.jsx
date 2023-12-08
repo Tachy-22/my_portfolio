@@ -77,7 +77,7 @@ const MyStack = () => {
   ];
 
   return (
-    <div className=" flex flex-col w-full  py-8 bg-gradient-to-b from-black/5 to-black relative">
+    <div id="my-stack" className=" flex flex-col w-full pt-[4rem] py-8 bg-gradient-to-b from-black/5 to-black relative">
       <h1 className="text-3xl font-bold mb-8 text-center monoton">
         My_Tech_Stack
       </h1>
