@@ -35,7 +35,7 @@ const projects = [
   {
     name: "Countries_API",
     category: "Web Application",
-    image: "/assets/images/countries.png",
+    image: "/assets/images/countries.webp",
     githubLink: "https://github.com/Tachy-22/react-cuntries-api",
     liveSiteLink: "https://react-cuntries-api.vercel.app/",
     description:
