@@ -33,7 +33,6 @@ const Hero = () => {
             font-extrabold transition-all duration-1000"
             />
           </motion.div>
-          {/* <LightOrbs position="bottom" /> */}
         </div>
       </div>
     </section>
