@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section
-      className={` w-full min-h-[90dvh] h-[90vh]  bg-cover overflow-hidden relative `}
+      className={` w-full min-h-[80dvh] h-[80dvh]  bg-cover overflow-hidden relative `}
     >
       {/* <LightOrbs position="top" /> */}
       <div className=" md:p-[2rem] sm:p-[1rem] p-4 pb-0  h-full uppercase w-full flex flex-col justify-between xl:items-center">
