@@ -6,39 +6,92 @@ import Image from "next/image";
 
 const projects = [
   {
-    name: "Project-1",
-    category: "Web Applications",
-    image: "project1.jpg",
-    githubLink: "https://github.com/username/project1",
-    liveSiteLink: "https://www.project1.com",
-  },
-  {
-    name: "Project-2",
+    name: "Hexashop",
     category: "E-commerce",
-    image: "project2.jpg",
-    githubLink: "https://github.com/username/project2",
-    liveSiteLink: "https://www.project2.com",
+    image: "/assets/images/Hexashop.png",
+    githubLink: "https://github.com/Tachy-22/Hexashop",
+    liveSiteLink: "https://hexashop-nine.vercel.app/",
+    description:
+      "A simple e-commerce application, where users can login, browse through items, add them to a cart and check out their goods.",
   },
   {
-    name: "Project-3",
+    name: "Vibeverse",
+    category: "Web Application",
+    image: "/assets/images/vibeverse.png",
+    githubLink: "https://github.com/Tachy-22/vibeverse",
+    liveSiteLink: "https://vibeverse-eosin.vercel.app/",
+    description:
+      "An easy to use chat and messaging application, with login features, chat rooms and private chats.",
+  },
+  {
+    name: "Chat_GPT_CLONE",
+    category: "Web Application",
+    image: "/assets/images/chatgpt.png",
+    githubLink: "https://github.com/Tachy-22/ChatGpt_Clone",
+    liveSiteLink: "https://chat-gpt-clone-tachy-22.vercel.app/",
+    description:
+      "A clone application of OpenAI's GPT-3 language model built using Node.js, Express, and ReactJS.",
+  },
+  {
+    name: "Countries_API",
+    category: "Web Application",
+    image: "/assets/images/countries.png",
+    githubLink: "https://github.com/Tachy-22/react-cuntries-api",
+    liveSiteLink: "https://react-cuntries-api.vercel.app/",
+    description:
+      "A simple web appliction that users can use to search for countries and get basic intormation on them.",
+  },
+  {
+    name: "Buildz",
     category: "Landing Page",
-    image: "project1.jpg",
-    githubLink: "https://github.com/username/project1",
-    liveSiteLink: "https://www.project1.com",
+    image: "/assets/images/Buildz.png",
+    githubLink: "https://github.com/Tachy-22/Bulidz_landingpage",
+    liveSiteLink: "https://bulidz-landingpage.vercel.app/",
+    description:
+      "Buildz is a base for future bussiness project which includes all aspects and makes a forcast about your project's payback.",
   },
   {
-    name: "Project-4",
-    category: "E-commerce",
-    image: "project2.jpg",
-    githubLink: "https://github.com/username/project2",
-    liveSiteLink: "https://www.project2.com",
+    name: "The_Dictionary",
+    category: "Web Application",
+    image: "/assets/images/dictionary.png",
+    githubLink: "https://github.com/Tachy-22/_Dictionary_app",
+    liveSiteLink: "https://dictionary-app-tachy-22.vercel.app/",
+    description: "A simple dictionary web appliction.",
   },
+  {
+    name: "Manage",
+    category: "Landing Page",
+    image: "/assets/images/manage.png",
+    githubLink: "https://github.com/Tachy-22/quiz_grad_app",
+    liveSiteLink:
+      "https://639a08fc9e0b6c2c77a82c8b--calm-monstera-2b3097.netlify.app/",
+    description:
+      "A web app that users can use to have fun as well as learn cool facts during the processs.",
+  },
+  {
+    name: "QuizGrad",
+    category: "Web application",
+    image: "/assets/images/QuizGrad.png",
+    githubLink: "https://github.com/Tachy-22/quiz_grad_app",
+    liveSiteLink: "https://bulidz-landingpage.vercel.app/",
+    description:
+      "A web app that users can use to have fun as well as learn cool facts during the processs.",
+  },
+  {
+    name: "Crowdfund",
+    category: "Landing Page",
+    image: "/assets/images/crowdfund.png",
+    githubLink: "https://github.com/Tachy-22/Crowd_funding",
+    liveSiteLink: "https://tachy-22.github.io/Crowd_funding/",
+    description: "A crowdfunding landing page.",
+  },
+
   // Add more projects similarly
 ];
 
 const MyProjects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const categories = ["All", "Web Applications", "Landing Page", "E-commerce"]; // Your category array
+  const categories = ["All", "Web Application", "Landing Page", "E-commerce"]; // Your category array
 
   const [isMobileDropdown, setIsMobileDropdown] = useState(false);
 
@@ -55,36 +108,37 @@ const MyProjects = () => {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <section className="bg-black h-full w-full flex flex-col justify-center items-center pt-[10rem] sm:pt-[18rem] lg:pt-[18rem] xl:pt-[20rem] py-[4rem] relative">
-      <div className="w-full  flex justify-center items-center  absolute lg:-top-[5rem] -top-10  brightness-[30%]  bg- ">
+    <section className="bg-black h-full w-full flex flex-col justify-center items-center pt-[10rem]  sm:pt-[13rem] md:pt-[10rem] lg:pt-[18rem] xl:pt-[20rem] py-[4rem] relative">
+      <div className="w-full  flex justify-center items-center  absolute lg:-top-[5rem] md:-top-[0rem] -top-10  brightness-[30%]  bg- ">
         <Image
           src={`/assets/images/htmlMockup.webp`}
           alt={`htmlMockup`}
-          className="lg:w-[60%] md:w-[40%] xl:w-[45%] h-full w-[90%] "
+          className="lg:w-[70%] sm:w-[80%] md:w-[50%] xl:w-[50%] h-full w-[90%] z-0"
           width={400}
           height={150}
         />
       </div>{" "}
-      <div className="flex lg:flex-row flex-col w-[95%] md:w-[w-90%] xl:w-[90%] xxl:w-[70%] justify-between ">
-        <div className="  text-start xl:w-full  ">
+      <div className="flex lg:flex-row flex-col w-[90%] z-10 lg:gap-[2rem]  md:w-[w-90%] xl:w-[90%] xxl:w-[70%] justify-between ">
+        <div className="  text-start w-full lg:w-[45%]   ">
           <h2 className="xl:text-7xl p-2 lg:text-5xl text-4xl font-extrabold text-start flex flex-col gap-3 uppercase monoton">
             <p className="">My</p>
             <p className="">Projects</p>
           </h2>
-          <p className="xl:py-[3rem] py-[1rem] p-2 xl:w-[90%] tracking-wide space-mono font-light xl:text-2xl text-lg">
-            Deployed scalable travel, event and telemedicine web and hybrid
-            mobile apps using React SPA and PWA. Collaborated in 140+ projects
-            with 50+ clients all around the world. I am also interested in data
-            analytics and visualization
+          <p className="xl:py-[3rem] py-[1rem] p-2  h-fit  tracking-wide space-mono font-light xl:text-2xl text-lg">
+            Deployed scalable e-commerce, social media web apps and static sites
+            using React and Next Js. Collaborated in a number of projects
+            including, a web3 application and a security company website. I am
+            also interested in data analytics and visualization as well as
+            Machine Learning and AI technologies.
           </p>
         </div>
-        <aside className=" w-full  lg:flex-row flex flex-col-reverse gap-4  justify-between items-end p-2 ">
-          <div className="flex flex-col gap-4 space-mono text-xl  w-full ">
+        <aside className=" lg:w-[55%] xl:w-[60%]   lg:flex-row flex flex-col-reverse gap-4  justify-between items-end p-2 ">
+          <div className="flex flex-col gap-4 space-mono text-xl  w-fit ">
             <Image
               src={`/assets/images/arrow.png`}
               alt={`arrow`}
-              className="w-full h-full  z-20 lg:block hidden "
-              width={120}
+              className="w-[10rem] h-full  z-20 lg:block hidden "
+              width={150}
               height={40}
             />
             <p className="">Browse through my repository</p>
@@ -93,22 +147,32 @@ const MyProjects = () => {
               role="button"
               aria-label="View Repository"
             >
-              View Repo
+              <a
+                href="https://github.com/Tachy-22"
+                target="_blank"
+                className=""
+              >
+                {" "}
+                View Repo
+              </a>
             </button>
           </div>
-          <div className="flex h-full">
+          <div className="flex h-full w-full ">
             {" "}
-            <Image
-              src={`/assets/images/repo.webp`}
-              alt={`repo`}
-              className="w-full h-fit    xl:hover:scale-[1.5]  lg:hover:scale-110 xl:hover:-translate-y-[6rem] xl:hover:-translate-x-[3.5rem] transition-all duration-1000  "
-              width={1890}
-              height={955}
-            />
+            <a href="https://github.com/Tachy-22" target="_blank" className="">
+              {" "}
+              <Image
+                src={`/assets/images/repo.webp`}
+                alt={`repo`}
+                className="w-full h-fit    xl:hover:scale-[1.4  ]  lg:hover:scale-110 xl:hover:-translate-y-[6rem] xl:hover:-translate-x-[3.5rem] transition-all duration-1000  "
+                width={1890}
+                height={955}
+              />
+            </a>
           </div>
         </aside>
       </div>
-      <div className="w-[90%] md:w-[w-80%] xl:w-[90%] mx-auto py-8 text-base ">
+      <div className="sm:w-[90%] w-[80%] md:w-[w-80%] xl:w-[70%] mx-auto py-8 text-base ">
         <div className="flex xl:justify-center items-center mb-4  gap-2">
           <p className="text-shadow-smooth  w-fit flex  ">Filter by</p>
           <div className={`flex gap-3 pl-3`}>
@@ -164,21 +228,23 @@ const MyProjects = () => {
           {/* Add more category buttons similarly */}
         </div>
 
-        <div className=" grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1  gap-4 mx-auto w-full ">
+        <div className=" grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 grid-cols-1  gap-4 mx-auto w-full ">
           {filteredProjects.map((project, index) => (
             <div
               key={index}
-              className="bg- xxl:w-[30rem] xl:w-[25rem]  max-w-full  overflow-hidden  "
+              className="bg- xxl:w-[30rem] xl:w-[25rem]  max-w-full min-h-max  overflow-hidden flex flex-col "
             >
-              <div
-                style={{ backgroundImage: "url(assets/images/bgImg.webp)" }}
-                className="w-full xxl:h-[20rem]  h-[15rem] bg-cover hover:scale-105 transition-all duration-700 "
-              ></div>
-              <div className="p-4 gap-4 bg-gray-900/20 w-full flex flex-col ">
-                <div className="flex justify-between items-center gap-4 ">
+              <Image
+                src={project.image}
+                className="w-full xxl:h-[25rem] bg-center  h-[12rem] bg-cover hover:scale-105 transition-all duration-700 "
+                width={1920}
+                height={997}
+              />
+              <div className="p-4 gap-4 bg-gray-900/20 w-full h-full flex-grow flex flex-col ">
+                <div className="flex justify-evenly items-center gap-4 ">
                   {" "}
-                  <h3 className="xl:text-lg uppercase   font-semibold    ">
-                    {project.name}
+                  <h3 className="xl:text-lg uppercase   font-semibold w-fit flex">
+                    <p className="w-full flex"> {project.name}</p>
                   </h3>
                   <div className="w-full bg-yellow-400/40 h-[0.1rem]"></div>
                   <div className="flex">
@@ -203,11 +269,7 @@ const MyProjects = () => {
                   </div>
                 </div>
                 <div className=" overflow-hidden ">
-                  <p className="text-sm md:text-base">
-                    {" "}
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna."
-                  </p>
+                  <p className="text-sm md:text-base"> {project.description}</p>
                   <span className="text-[#F5BD02] w-full cursor-pointer hover:bg-gray-300/10 transition-all duration-500 rounded-md px-1 my-2">
                     -Learn more -
                   </span>

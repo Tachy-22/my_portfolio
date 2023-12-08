@@ -1,10 +1,10 @@
 import React from "react";
 // Assuming you have the URLs for each link
 const links = {
-  Messenger: "https://messenger.com",
-  LinkedIn: "https://linkedin.com",
-  Instagram: "https://instagram.com",
-  Github: "https://github.com",
+  facebook: "https://web.facebook.com/profile.php?id=100088511213408",
+  LinkedIn: "https://www.linkedin.com/in/jeffrey-entekume-330644259/",
+  twitter: "https://twitter.com/entekume_j",
+  Github: "https://github.com/Tachy-22",
 };
 
 const ContactMe = () => {
@@ -21,7 +21,7 @@ const ContactMe = () => {
         Have an exciting project you need help with? Send me an email or contact
         me via instant message!
       </p>
-      <div className=" lg:py-8 py-4">
+      <div className=" lg:pb-8 pb-4 ">
         <a
           href={`mailto:entekumeJeffrey@gmail.com`}
           className="bg-blue-500 hover:bg-blue-700 hover:underline underline-offset-2 text-white font-bold py-2 px-4 rounded"

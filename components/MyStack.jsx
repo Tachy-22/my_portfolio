@@ -11,7 +11,7 @@ const MyStack = () => {
       category: "Frontend Development",
       color: "pink",
       description:
-        "I specialize in building interactive user interfaces using a variety of frontend technologies.",
+        "Passionate about UI/UX. Over 1+ years of development experience in HTML, CSS, JS, React and NextJS frameworks",
       technologies: [
         {
           name: "HTML",
@@ -39,7 +39,7 @@ const MyStack = () => {
       category: "Backend Development",
       color: "blue",
       description:
-        "I have experience developing robust backend systems using modern technologies.",
+        "I have experience developing robust backend systems using  technologies such as Sanity.io and firebase that offers various backend services",
       technologies: [
         {
           name: "Firebase",
@@ -55,10 +55,10 @@ const MyStack = () => {
       ],
     },
     {
-      category: "Database & Data Management",
+      category: "Database Management",
       color: "orange",
       description:
-        "Proficient in handling data and managing databases for applications.",
+        "Proficient in handling data and managing databases for applications, using Mongoose ODM, Prisma ORM, and MongoDB",
       technologies: [
         {
           name: "Mongoose",
@@ -81,7 +81,7 @@ const MyStack = () => {
       <h1 className="text-3xl font-bold mb-8 text-center monoton">
         My_Tech_Stack
       </h1>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-[90%] md:w-[85%] xl:w-[80%]  mx-auto z-10 md:gap-0 gap-3">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-[90%] md:w-[85%] lg:w-[80%] xl:w-[70%]  mx-auto z-10 md:gap-0 gap-3">
         {stackItems.map((stackItem, index) => (
           <div key={index} className="bg- border shadow-md  p-6 ">
             <h2 className="xl:text-2xl text-xl font-semibold mb-4 w-fit flex flex-col">
@@ -101,7 +101,7 @@ const MyStack = () => {
                   <Image
                     src={tech.logo}
                     alt={`${tech.name} logo`}
-                    className="w-12 h-12  bg-white p-1 rounded-full"
+                    className="min-w-12 w-12 max-h-12 h-12  bg-white p-1 rounded-full"
                     width={25}
                     height={25}
                   />

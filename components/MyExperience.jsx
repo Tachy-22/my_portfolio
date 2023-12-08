@@ -22,40 +22,40 @@ import Image from "next/image";
 
 const workExperience = [
   {
-    date: ["2019", "2021"],
-    companyName: "ABC Corp",
+    date: ["May 2023", "Nov 2023"],
+    companyName: "Prodigal AI",
     descriptionOfWorkDone:
       "Managed frontend development and collaborated on various projects.",
-    companyLogo: "/abc_logo.png",
-    position: "Frontend Developer",
-    techStackUsed: ["React", "JavaScript", "HTML", "CSS"],
-    companySite: "https://www.abccorp.com",
-    location: " San Francisco, CA",
-    remote: false,
-  },
-  {
-    date: ["2018", "2019"],
-    companyName: "XYZ Solutions",
-    descriptionOfWorkDone:
-      "Led backend development and implemented scalable solutions.",
-    companyLogo: "/xyz_logo.png",
-    position: "Backend Developer",
-    techStackUsed: ["Node.js", "MongoDB", "Express", "AWS"],
-    companySite: "https://www.xyzsolutions.com",
-    location: " New York, NY",
+    companyLogo: "/assets/images/prodigal_ai_logo.jpeg",
+    position: "Frontend Developer intern",
+    techStackUsed: ["React", "JavaScript", "HTML", "CSS", "Bootstrap"],
+    companySite: "http://prodigalai.com.au",
+    location: "Sydney, AU",
     remote: true,
   },
   {
-    date: ["2017", "2018"],
-    companyName: "PQR Innovations",
+    date: ["Jun 2023", "Aug 2023"],
+    companyName: "N3Clouds ",
     descriptionOfWorkDone:
-      "Worked on full-stack development for innovative projects.",
-    companyLogo: "/pqr_logo.png",
-    position: "Full-stack Developer",
-    techStackUsed: ["Angular", "Python", "Django", "PostgreSQL"],
-    companySite: "https://www.pqrinnovations.com",
-    location: " Chicago, IL",
-    remote: false,
+      "Worked as an intern in the development of several custom components using typescript.",
+    companyLogo: "/assets/images/N3clouds.jpeg",
+    position: "Frontend Developer intern",
+    techStackUsed: ["React", "Typescript", "HTML", "CSS"],
+    companySite: "https://www.n3clouds.com/",
+    location: "Kolkata, IN",
+    remote: true,
+  },
+  {
+    date: ["Jun 2023", "Aug 202"],
+    companyName: "Headway Vision",
+    descriptionOfWorkDone:
+      "Managed frontend development and collaborated on two projects.",
+    companyLogo: "/assets/images/Headway.jpeg",
+    position: "Frontend Web Developer",
+    techStackUsed: ["CSS", "HTML5", "Recat js", "Google sheets"],
+    companySite: "https://www.Headwayvision.com",
+    location: " Bellingham, Be",
+    remote: true,
   },
 ];
 
@@ -155,7 +155,7 @@ const Accordion = () => {
                   height={24}
                 />
               </div>
-              <div key={index} className="my-4 cursor-pointer">
+              <div key={index} className="my-4 cursor-pointer flex flex-col">
                 <div className="md:flex-row flex flex-col gap-3 py-1 space-mono font-thin ">
                   <p className=" flex items-center gap-2">
                     <IoLocationSharp className="text-lg text-purple-500" />(
@@ -173,7 +173,9 @@ const Accordion = () => {
                     {experience.companySite}
                   </a>
                 </div>
-                <p className="mt-2 w-fit">{experience.descriptionOfWorkDone}</p>
+                <p className="mt-2 w-[80%]">
+                  {experience.descriptionOfWorkDone}
+                </p>
                 <div className="mt-2">
                   <ul className="list-disc list-inside flex lg:gap-4 gap-2">
                     {experience.techStackUsed.map((tech, i) => (
